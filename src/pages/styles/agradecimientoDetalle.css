@@ -1,0 +1,10 @@
+.Fondo {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(137, 43, 226, 0.267);
+  height: 600px;
+  border-radius: 5%;
+}

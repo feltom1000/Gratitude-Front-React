@@ -1,24 +1,91 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import AgradecimientosList from "./pages/AgradecimientosList";
+import AgradecimientoDetalle from "./pages/agradecimientoDetalle";
+import Navbar from "./components/Navbar";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Navbar />
+      <AgradecimientosList
+        agradecimientos={[
+          {
+            fecha: "22/03/2021",
+            lista: [
+              "La vida es confusa",
+              "La vida es difusa",
+              "La vida es ambigua",
+            ],
+          },
+          {
+            fecha: "23/03/2021",
+            lista: [
+              "Mis desiciones me hace",
+              "Mis acciones me forman",
+              "Mi pasado NO me marca",
+            ],
+          },
+          {
+            fecha: "23/03/2021",
+            lista: [
+              "Mis desiciones me hace",
+              "Mis acciones me forman",
+              "Mi pasado NO me marca",
+            ],
+          },
+          {
+            fecha: "23/03/2021",
+            lista: [
+              "Mis desiciones me hace",
+              "Mis acciones me forman",
+              "Mi pasado NO me marca",
+            ],
+          },
+          {
+            fecha: "23/03/2021",
+            lista: [
+              "Mis desiciones me hace",
+              "Mis acciones me forman",
+              "Mi pasado NO me marca",
+            ],
+          },
+          {
+            fecha: "23/03/2021",
+            lista: [
+              "Mis desiciones me hace",
+              "Mis acciones me forman",
+              "Mi pasado NO me marca",
+            ],
+          },
+          {
+            fecha: "23/03/2021",
+            lista: [
+              "Mis desiciones me hace",
+              "Mis acciones me forman",
+              "Mi pasado NO me marca",
+            ],
+          },
+          {
+            fecha: "23/03/2021",
+            lista: [
+              "Mis desiciones me hace",
+              "Mis acciones me forman",
+              "Mi pasado NO me marca",
+            ],
+          },
+          {
+            fecha: "23/03/2021",
+            lista: [
+              "Mis desiciones me hace",
+              "Mis acciones me forman",
+              "Mi pasado NO me marca",
+            ],
+          },
+        ]}
+      />
+    </React.Fragment>
   );
 }
 

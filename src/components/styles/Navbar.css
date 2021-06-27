@@ -1,0 +1,37 @@
+img {
+  width: 50px;
+}
+
+.fluid {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Navbar {
+  width: 100%;
+  padding: 0.2rem 0;
+  margin-top: 3px;
+  background-color: #1c3643;
+  z-index: 1000;
+}
+
+.Navbar__brand {
+  color: #000000;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.Navbar__brand-logo {
+  margin-right: 0.5rem;
+}

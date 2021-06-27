@@ -1,0 +1,33 @@
+.Marco {
+  margin: 12px;
+  background-color: rgb(197, 46, 46);
+  border-radius: 10%;
+  max-width: 30vw;
+  height: auto;
+}
+
+.Agradecimientos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  line-height: 2em;
+  padding: 10%;
+  border-radius: 20%;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.1vw;
+  max-width: 20vw;
+  height: 22vh;
+}
+
+ul {
+  margin-left: -20px;
+  list-style-type: none;
+}
+
+h2 {
+  text-align: left !important;
+}
