@@ -8,8 +8,8 @@ function Navbar() {
       <div className="fluid">
         <div className="Navbar__brand" to="/">
           <img className="Navbar__brand-logo" src={yingyang} alt="Logo" />
-          <span>Tus</span>
           <span>
+            Tus
             <strong>Agradecimientos</strong>
           </span>
         </div>
