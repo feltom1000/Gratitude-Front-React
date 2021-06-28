@@ -3,7 +3,7 @@ import React from "react";
 import "./styles/agradecimiento.css";
 
 function Agradecimiento(props) {
-  const listaAgradecimientos = props.lista
+  const listaAgradecimientos = props.lista;
 
   return (
     <div className="Marco">
@@ -12,12 +12,13 @@ function Agradecimiento(props) {
           Agradecimientos del <em>{props.fecha}</em>
         </h2>
         <ul>
-          {listaAgradecimientos && listaAgradecimientos.map((agradecimiento) => {
+          {Object.entries(listaAgradecimientos).map((agradecimiento) => {
             return (
               <li>
                 <em>{agradecimiento}</em>
+                <p></p>
               </li>
-            )
+            );
           })}
         </ul>
       </div>

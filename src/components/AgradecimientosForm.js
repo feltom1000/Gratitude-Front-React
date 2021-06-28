@@ -7,8 +7,10 @@ function AgradecimientosForm(props) {
     <form>
       <div className="form-group">
         <label>Fecha</label>
+        <br />
+
         <input
-          onChange={props.formDataInput}
+          onChange={props.formDateInput}
           className="inputForm"
           type="date"
           name="date"
@@ -17,40 +19,41 @@ function AgradecimientosForm(props) {
       </div>
       <div className="form-group">
         <label>Agradecimientos</label>
+        <br />
         <input
-          onChange={props.formDataInput}
+          onChange={props.formAgradecimientoInput}
           className="inputForm"
           type="text"
-          name="agradecimientos1"
-          value={props.formDataValue.agradecimientos1}
+          name="1º: "
+          value={props.formAgradecimientoValue.agradecimientos1}
         />
         <input
-          onChange={props.formDataInput}
+          onChange={props.formAgradecimientoInput}
           className="inputForm"
           type="text"
-          name="agradecimientos2"
-          value={props.formDataValue.agradecimientos2}
+          name="2º: "
+          value={props.formAgradecimientoValue.agradecimientos2}
         />
         <input
-          onChange={props.formDataInput}
+          onChange={props.formAgradecimientoInput}
           className="inputForm"
           type="text"
-          name="agradecimientos3"
-          value={props.formDataValue.agradecimientos3}
+          name="3º: "
+          value={props.formAgradecimientoValue.agradecimientos3}
         />
         <input
-          onChange={props.formDataInput}
+          onChange={props.formAgradecimientoInput}
           className="inputForm"
           type="text"
-          name="agradecimientos4"
-          value={props.formDataValue.agradecimientos4}
+          name="4º: "
+          value={props.formAgradecimientoValue.agradecimientos4}
         />
         <input
-          onChange={props.formDataInput}
+          onChange={props.formAgradecimientoInput}
           className="inputForm"
           type="text"
-          name="agradecimientos5"
-          value={props.formDataValue.agradecimientos5}
+          name="5º: "
+          value={props.formAgradecimientoValue.agradecimientos5}
         />
       </div>
 
