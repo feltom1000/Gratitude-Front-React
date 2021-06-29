@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap");
+
 .Marco {
-  /* margin: 12px; */
-  background-color: rgb(197, 46, 46);
+  /* background-color: initial; */
+  background-color: rgba(197, 46, 46, 0.8);
   border-radius: 10%;
-  max-width: 30vw;
+  max-width: 33vw;
+  width: 100%;
   height: auto;
 }
 
@@ -14,20 +17,36 @@
   text-align: center;
   margin: auto;
   line-height: 2em;
-  padding: 10%;
+  padding: 20px;
   border-radius: 20%;
-  text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1.1vw;
-  max-width: 20vw;
-  height: 22vh;
+  max-width: 32vw;
+  height: 50vh;
 }
 
 ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
   margin-left: -20px;
   list-style-type: none;
+  background-color: initial;
+}
+
+li {
+  margin: 3px;
+  background-color: initial;
+  line-height: 26px;
 }
 
 h2 {
   text-align: left !important;
+  font-size: 20px;
+  margin-bottom: 0px;
+  font-family: "Libre Baskerville", serif;
+}
+
+em {
+  background-color: initial;
 }

@@ -35,6 +35,7 @@ function AgradecimientosNew() {
         <Agradecimiento fecha={formDate.date} lista={agradecimientosLista.agradecimientos} />
       </div>
       <div className="form-container">
+        <h2>Nuevo día... Nuevas cosas que Agradecer</h2>
         <AgradecimientosForm
           formDataValue={formDate}
           formDateInput={handleDateChange}

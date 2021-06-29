@@ -16,7 +16,7 @@ function Agradecimiento(props) {
             return (
               <li>
                 <em>{agradecimiento}</em>
-                <p></p>
+                <br/>
               </li>
             );
           })}
