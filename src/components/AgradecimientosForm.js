@@ -3,8 +3,12 @@ import React from "react";
 import "./styles/AgradecimientosForm.css";
 
 function AgradecimientosForm(props) {
+  const handleClick = (e) => {
+    return console.log("The button was Clicked");
+  };
+
   return (
-    <form>
+    <form onSubmit={props.envio}>
       <div className="form-group">
         <label>Fecha</label>
         <br />
@@ -56,10 +60,11 @@ function AgradecimientosForm(props) {
           value={props.formAgradecimientoValue.agradecimientos5}
         />
       </div>
-
-      {/* <button onClick={this.handleClick} className="btn btn-primary">
-        Guardar
-      </button> */}
+      <div className="button-container">
+        <button onClick={handleClick} className="btn btn-primary">
+          Guardar
+        </button>
+      </div>
     </form>
   );
 }

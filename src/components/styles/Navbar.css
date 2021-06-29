@@ -21,13 +21,13 @@ img {
 .Navbar {
   width: 100%;
   padding: 0.2rem 0;
-  background-color: rgb(148 161 181);
+  background-color: initial;
   z-index: 100000;
 }
 
 .Navbar__brand {
   border-radius: 30%;
-  background-color: rgb(148 161 181);
+  background-color: initial;
   color: #000000;
   text-decoration: none;
   display: flex;
@@ -35,17 +35,17 @@ img {
 }
 
 .Navbar__brand-logo {
-  background-color: rgb(148 161 181);
+  background-color: initial;
   margin-right: 0.5rem;
   border-radius: 20%;
 }
 
 span {
-  background-color: rgb(148 161 181);
+  background-color: initial;
   border-radius: 20%;
 }
 
 strong {
-  background-color: rgb(148 161 181);
+  background-color: initial;
   border-radius: 20%;
 }

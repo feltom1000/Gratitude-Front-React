@@ -8,15 +8,17 @@ function Agradecimiento(props) {
   return (
     <div className="Marco">
       <div className="Agradecimientos">
-        <h2>
-          Agradecimientos del <em>{props.fecha}</em>
-        </h2>
+        <div className="title">
+          <h2>
+            Agradecimientos del <em>{props.fecha}</em>
+          </h2>
+        </div>
         <ul>
           {Object.entries(listaAgradecimientos).map((agradecimiento) => {
             return (
               <li>
                 <em>{agradecimiento}</em>
-                <br/>
+                <br />
               </li>
             );
           })}

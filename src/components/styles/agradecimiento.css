@@ -25,6 +25,14 @@
   height: 50vh;
 }
 
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: initial;
+}
+
 ul {
   display: grid;
   grid-template-columns: 1fr;

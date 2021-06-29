@@ -5,6 +5,7 @@ import Layout from "./components/Layout";
 import AgradecimientosList from "./pages/AgradecimientosList";
 import AgradecimientoDetalle from "./pages/agradecimientoDetalle";
 import AgradecimientosNew from "./pages/AgradecimientosNew";
+import AgradecimientosIndex from "./pages/AgradecimientosIndex";
 import "./App.css";
 
 function App() {
@@ -86,13 +87,13 @@ function App() {
                 ],
               },
             ]}
-            />
+            />*/}
         <Switch>
+          <Route exact path="/" component={AgradecimientosIndex} />
           <Route exact path="/list" component={AgradecimientosList} />
           <Route exact path="/details" component={AgradecimientoDetalle} />
-          <Route exact path="/form" component={AgradecimientosForm} />
-        </Switch> */}
-        <AgradecimientosNew />
+          <Route exact path="/form" component={AgradecimientosNew} />
+        </Switch>
       </Layout>
     </BrowserRouter>
   );
