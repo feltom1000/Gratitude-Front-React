@@ -6,6 +6,14 @@ import Agradecimiento from "../components/Agradecimiento";
 import AgradecimientosForm from "../components/AgradecimientosForm";
 
 function AgradecimientosNew() {
+  const [agradecimientosLista, setAgradecimientosLista] = React.useState({
+    agradecimientos: {},
+  });
+  const [formDate, setFormDate] = React.useState({
+    date: "",
+  });
+
+
   const handleSubmit = e => {
     e.preventDefault();
     console.log('Se esta manejando el submit')
@@ -25,13 +33,6 @@ function AgradecimientosNew() {
       agradecimientos: nextForm,
     });
   };
-
-  const [agradecimientosLista, setAgradecimientosLista] = React.useState({
-    agradecimientos: {},
-  });
-  const [formDate, setFormDate] = React.useState({
-    date: "",
-  });
 
   return (
     <React.Fragment>

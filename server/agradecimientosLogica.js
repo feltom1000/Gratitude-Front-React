@@ -56,49 +56,57 @@ const agradecimientosAll = [
   },
 ];
 
-const findIndexWithID = (id) => {
-  agradecimientosAll.findIndex((x) => x.id === id)
-}
+const findIndexWithID = (array, id) => {
+  array.indexOf((x) => x.id === id);
+};
 
-class Agradecimiento {
-  constructor(id, fecha, lista) {
-    this.id = id;
-    this.fecha = fecha;
+// const ejemplo = new Controlador([
+//   {
+//     id: 10,
+//     fecha: 27 / 1 / 97,
+//     items: [],
+//   },
+// ]);
+
+class Controlador {
+  constructor(lista) {
     this.lista = lista;
   }
 
-  addNew(fecha, lista, id) {
+  addNew(id, fecha, items) {
     this.lista.push({
       id: id,
       fecha: fecha,
-      lista: { lista },
+      items: items,
     });
   }
 
   deleteOne(id) {
-    this.lista.splice(findIndexWithID(id), 1);
+    this.lista.splice(findIndexWithID(this.lista, id), 1);
   }
 
   showAll() {
-    console.log(this.lista);
+    return this.lista;
   }
 
   showOneWithID(id) {
-    console.log(this.lista[findIndexWithID(id)]);
+    const filterId = this.lista.filter(x => x.id === id);
+    return filterId;
   }
 
   showWithFechaFilter(fecha) {
     const filterPorFecha = this.lista.filter((x) => x.fecha === fecha);
-    console.log(filterPorFecha);
+    return filterPorFecha;
   }
 
-  editFecha(id, fecha){
-    this.lista[findIndexWithID(id)].fecha = fecha
+  editFecha(id, fecha) {
+    const indexValue = findIndexWithID(this.lista, id);
+    this.lista[indexValue].fecha = fecha;
   }
 
-  editLista(id, lista){
-    this.lista[findIndexWithID(id)].lista = lista
+  editLista(id, items) {
+    this.lista[findIndexWithID(this.lista, id)].items = items;
   }
 }
 
-module.exports = Agradecimiento;
+module.exports = Controlador;
