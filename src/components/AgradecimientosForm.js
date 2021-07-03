@@ -28,36 +28,36 @@ function AgradecimientosForm(props) {
           onChange={props.formAgradecimientoInput}
           className="inputForm"
           type="text"
-          name="1º: "
-          value={props.formAgradecimientoValue.agradecimientos1}
+          name="0"
+          value={props.formAgradecimientoValue[0]}
         />
         <input
           onChange={props.formAgradecimientoInput}
           className="inputForm"
           type="text"
-          name="2º: "
-          value={props.formAgradecimientoValue.agradecimientos2}
+          name="1"
+          value={props.formAgradecimientoValue[1]}
         />
         <input
           onChange={props.formAgradecimientoInput}
           className="inputForm"
           type="text"
-          name="3º: "
-          value={props.formAgradecimientoValue.agradecimientos3}
+          name="2"
+          value={props.formAgradecimientoValue[2]}
         />
         <input
           onChange={props.formAgradecimientoInput}
           className="inputForm"
           type="text"
-          name="4º: "
-          value={props.formAgradecimientoValue.agradecimientos4}
+          name="3"
+          value={props.formAgradecimientoValue[3]}
         />
         <input
           onChange={props.formAgradecimientoInput}
           className="inputForm"
           type="text"
-          name="5º: "
-          value={props.formAgradecimientoValue.agradecimientos5}
+          name="4"
+          value={props.formAgradecimientoValue[4]}
         />
       </div>
       <div className="button-container">

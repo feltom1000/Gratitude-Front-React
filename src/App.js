@@ -92,7 +92,7 @@ function App() {
           <Route exact path="/" component={AgradecimientosIndex} />
           <Route exact path="/list" component={AgradecimientosList} />
           <Route exact path="/details" component={AgradecimientoDetalle} />
-          <Route exact path="/form" component={AgradecimientosNew} />
+          <Route exact path="/new" component={AgradecimientosNew} />
         </Switch>
       </Layout>
     </BrowserRouter>

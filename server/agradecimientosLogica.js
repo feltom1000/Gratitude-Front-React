@@ -1,64 +1,3 @@
-const agradecimientosAll = [
-  {
-    id: 10,
-    fecha: "27/01",
-    lista: {
-      lalalala1: "lalalal1",
-      lalalala2: "lalalal1",
-      lalalala3: "lalalal1",
-      lalalala4: "lalalal1",
-      lalalala5: "lalalal1",
-    },
-  },
-  {
-    id: 20,
-    fecha: "27/01",
-    lista: {
-      lalalala1: "lalalal1",
-      lalalala2: "lalalal1",
-      lalalala3: "lalalal1",
-      lalalala4: "lalalal1",
-      lalalala5: "lalalal1",
-    },
-  },
-  {
-    id: 30,
-    fecha: "27/01",
-    lista: {
-      lalalala1: "lalalal1",
-      lalalala2: "lalalal1",
-      lalalala3: "lalalal1",
-      lalalala4: "lalalal1",
-      lalalala5: "lalalal1",
-    },
-  },
-  {
-    id: 40,
-    fecha: "27/01",
-    lista: {
-      lalalala1: "lalalal1",
-      lalalala2: "lalalal1",
-      lalalala3: "lalalal1",
-      lalalala4: "lalalal1",
-      lalalala5: "lalalal1",
-    },
-  },
-  {
-    id: 50,
-    fecha: "27/01",
-    lista: {
-      lalalala1: "lalalal1",
-      lalalala2: "lalalal1",
-      lalalala3: "lalalal1",
-      lalalala4: "lalalal1",
-      lalalala5: "lalalal1",
-    },
-  },
-];
-
-const findIndexWithID = (array, id) => {
-  array.indexOf((x) => x.id === id);
-};
 
 // const ejemplo = new Controlador([
 //   {
@@ -70,7 +9,7 @@ const findIndexWithID = (array, id) => {
 
 class Controlador {
   constructor(lista) {
-    this.lista = lista;
+    this.lista = [lista];
   }
 
   addNew(id, fecha, items) {
@@ -82,7 +21,8 @@ class Controlador {
   }
 
   deleteOne(id) {
-    this.lista.splice(findIndexWithID(this.lista, id), 1);
+    const indexValue = this.lista.findIndex((x) => x.id === id);
+    this.lista.splice(indexValue, 1);
   }
 
   showAll() {
@@ -90,7 +30,7 @@ class Controlador {
   }
 
   showOneWithID(id) {
-    const filterId = this.lista.filter(x => x.id === id);
+    const filterId = this.lista.filter((x) => x.id === id);
     return filterId;
   }
 
@@ -100,12 +40,13 @@ class Controlador {
   }
 
   editFecha(id, fecha) {
-    const indexValue = findIndexWithID(this.lista, id);
+    const indexValue = this.lista.findIndex((x) => x.id === id);
     this.lista[indexValue].fecha = fecha;
   }
 
-  editLista(id, items) {
-    this.lista[findIndexWithID(this.lista, id)].items = items;
+  editItem(id, indexItem, item) {
+    const indexValue = this.lista.findIndex((x) => x.id === id)
+    this.lista[indexValue].items[indexItem] = item;
   }
 }
 

@@ -14,7 +14,7 @@ function Agradecimiento(props) {
           </h2>
         </div>
         <ul>
-          {Object.entries(listaAgradecimientos).map((agradecimiento) => {
+          {listaAgradecimientos.map((agradecimiento) => {
             return (
               <li>
                 <em>{agradecimiento}</em>

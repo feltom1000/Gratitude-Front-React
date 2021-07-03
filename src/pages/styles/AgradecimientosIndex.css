@@ -1,5 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+/* @namespace url(../AgradecimientosIndex.js);
+@namespace 'AgradecimientosIndex'; */
 
 * {
   max-width: 100%;
@@ -32,11 +35,11 @@
 }
 
 .text h1 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .text h3 {
-  font-family: "Libre Baskerville", serif;
+  font-family: 'Libre Baskerville', serif;
 }
 
 .btn-blue {

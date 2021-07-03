@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
 
 .hero {
   width: 50%;
@@ -6,12 +6,12 @@
   margin-bottom: 1rem;
   display: flex;
   justify-content: center;
-  background-image: url(../../images/fondo.png);
+  /* background-image: url(../../images/fondo.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  z-index: 1;
+  z-index: 1; */
 }
 
 .agradecimiento-container {
@@ -20,7 +20,8 @@
   justify-content: flex-start;
   margin-top: -45%;
   margin-left: 30px;
-  background-color: initial;
+  background-color: rgba(102, 212, 176, 0.8);
+  z-index: 1000;
 }
 
 .form-container {
@@ -31,9 +32,9 @@
 }
 
 h2 {
-  font-family: "Libre Baskerville", serif;
+  font-family: 'Libre Baskerville', serif;
   text-align: center;
   margin-left: 30px;
   margin-bottom: 25px;
-  background-color: initial;
+  /* background-color: initial; */
 }

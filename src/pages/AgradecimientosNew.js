@@ -7,7 +7,7 @@ import AgradecimientosForm from "../components/AgradecimientosForm";
 
 function AgradecimientosNew() {
   const [agradecimientosLista, setAgradecimientosLista] = React.useState({
-    agradecimientos: {},
+    agradecimientos: [],
   });
   const [formDate, setFormDate] = React.useState({
     date: "",
