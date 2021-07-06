@@ -15,7 +15,6 @@ img {
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
-  background-color: rgb(148 161 181);
 }
 
 .Navbar {

@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node ./app"
   },
   "keywords": [],
   "author": "Tomas Molnar <feltom1000@hotmail.com>",
   "license": "MIT",
   "devDependencies": {
     "jest": "^27.0.6"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
   }
 }

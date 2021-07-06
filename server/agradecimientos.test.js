@@ -5,7 +5,7 @@ describe('El Controlador de agradecimientos', () => {
 
   describe('se Construye', () => {
     beforeEach(() => {
-      controladorObject = new Controlador(
+      controladorObject = new Controlador([
         {
           id: 10,
           fecha: '27 / 1 / 97',
@@ -17,11 +17,12 @@ describe('El Controlador de agradecimientos', () => {
             'Por lo menos puedo Agradecer tener a alguien que me ayude.',
           ],
         },
-      );
+      ]);
     });
 
     describe('con el metodo constructor', () => {
       it('y todos sus atributos son correctos', () => {
+        console.log(controladorObject.lista)
         expect(controladorObject.lista[0].id).toEqual(10);
         expect(controladorObject.lista[0].fecha).toEqual('27 / 1 / 97');
         expect(controladorObject.lista[0].items).toEqual([

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
 
 .Marco {
   /* background-color: initial; */
@@ -19,10 +19,10 @@
   line-height: 2em;
   padding: 20px;
   border-radius: 20%;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.1vw;
   max-width: 32vw;
-  height: 50vh;
+  height: auto;
 }
 
 .title {
@@ -52,9 +52,22 @@ h2 {
   text-align: left !important;
   font-size: 20px;
   margin-bottom: 0px;
-  font-family: "Libre Baskerville", serif;
+  font-family: 'Libre Baskerville', serif;
 }
 
 em {
   background-color: initial;
+}
+
+@media (max-width: 790px) {
+  .Marco {
+    margin: 0px;
+    width: auto;
+  }
+
+  .Agradecimientos {
+    margin: 0px;
+    max-width: auto;
+    height: auto;
+  }
 }

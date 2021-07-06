@@ -9,7 +9,7 @@
 
 class Controlador {
   constructor(lista) {
-    this.lista = [lista];
+    this.lista = lista;
   }
 
   addNew(id, fecha, items) {

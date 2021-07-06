@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
 
-/* @namespace url(../AgradecimientosIndex.js);
-@namespace 'AgradecimientosIndex'; */
+html {
+  height: 100%;
+}
 
-* {
+body {
+  min-height: 100%;
   max-width: 100%;
-  height: auto;
+  height: 100%;
   background-image: url(../../images/fondo.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -14,32 +16,51 @@
   background-attachment: fixed;
 }
 
+.container-total {
+  background: local;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .forest {
+  margin-top: 505px;
   width: 680px;
   height: auto;
-  margin-top: -550px;
-  float: right;
   opacity: 0.9;
+  background-color: initial;
 }
 
 .marco-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-top: 260px;
+  margin-top: 850px;
   margin-left: 90px;
   color: rgb(0, 0, 0);
   z-index: 1000;
   text-shadow: 3px 4px 4px #ce5937;
+  background-color: initial;
+}
+
+.marco-text {
+  background: local;
+}
+
+.text {
+  background: local;
 }
 
 .text h1 {
   font-family: 'Josefin Sans', sans-serif;
+  background: local;
+}
+
+.text h2 {
+  background: local;
 }
 
 .text h3 {
   font-family: 'Libre Baskerville', serif;
+  background: local;
 }
 
 .btn-blue {
@@ -62,7 +83,6 @@
   color: rgb(17, 17, 17);
   background-color: #0d6efd;
   border-color: #0d6efd;
-  z-index: 10000000000000;
   box-shadow: 3px 4px 2.5px 2px rgba(0, 0, 0, 0.76);
 }
 .btn-blue:hover {
@@ -71,57 +91,112 @@
   border-color: #0a58ca;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1250px) {
   .forest {
-    width: 560px;
+    width: 570px;
     height: auto;
-    margin-top: -500px;
-    margin-right: 15px;
-    float: right;
-    opacity: 0.8;
-  }
-}
-
-@media (max-width: 1200px) and (min-width: 640px) {
-  .forest {
-    width: 350px;
-    height: auto;
-    margin-top: -540px;
-    margin-right: 50px;
-    float: right;
-    opacity: 0.8;
-  }
-}
-
-@media (max-width: 640px) and (min-width: 550px) {
-  .forest {
-    width: 300px;
-    height: auto;
-    margin-top: -570px;
-    margin-right: 50px;
-    float: right;
-    opacity: 0.8;
-  }
-}
-
-@media (max-width: 550px) {
-  .forest {
-    width: 175px;
-    height: auto;
-    margin-top: -450px;
-    float: right;
-    opacity: 0.5;
+    margin-top: 550px;
+    margin-right: 10px;
   }
 
   .marco-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: 160px;
+    margin-top: 785px;
+    margin-left: 90px;
+  }
+}
+
+@media (max-width: 1115px) {
+  .forest {
+    width: 570px;
+    height: auto;
+    margin-top: 470px;
+    margin-right: 10px;
+  }
+
+  .marco-text {
+    margin-top: 700px;
+    margin-left: 90px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .forest {
+    width: 500px;
+    height: auto;
+    margin-top: 60%;
+    margin-right: 10px;
+  }
+
+  .marco-text {
+    margin-top: 80%;
     margin-left: 40px;
-    color: rgb(0, 0, 0);
-    z-index: 1000;
-    text-shadow: 3px 4px 4px #ce5937;
+  }
+}
+
+@media (max-width: 900px) {
+  .forest {
+    margin-top: 70%;
+  }
+
+  .marco-text {
+    margin-top: 90%;
+  }
+}
+
+@media (max-width: 850px) {
+  .forest {
+    width: 450px;
+    margin-top: 70%;
+    margin-right: 10px;
+  }
+
+  .marco-text {
+    margin-top: 90%;
+    margin-left: 40px;
+  }
+
+  .btn-blue {
+    justify-content: flex-end;
+    margin-left: 70%;
+  }
+}
+
+@media (max-width: 800px) {
+  .container-total {
+    flex-direction: column-reverse;
+  }
+
+  .forest {
+    justify-items: flex-end;
+    width: 290px;
+    margin-top: 70%;
+    margin-left: 55%;
+    margin-right: 0px;
+  }
+
+  .marco-text {
+    align-self: flex-start;
+    margin-top: 10%;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container-total {
+    flex-direction: column-reverse;
+  }
+
+  .forest {
+    justify-items: center;
+    width: 400px;
+    margin-top: 70%;
+    margin-left: 20%;
+    margin-right: 0px;
+  }
+
+  .marco-text {
+    align-self: center;
+    margin-top: -3%;
+    margin-left: 20px;
   }
 }

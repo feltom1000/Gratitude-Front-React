@@ -1,23 +1,22 @@
-import React from "react";
+import React from 'react';
 
-import "./styles/AgradecimientosNew.css";
+import './styles/AgradecimientosNew.css';
 
-import Agradecimiento from "../components/Agradecimiento";
-import AgradecimientosForm from "../components/AgradecimientosForm";
+import Agradecimiento from '../components/Agradecimiento';
+import AgradecimientosForm from '../components/AgradecimientosForm';
 
 function AgradecimientosNew() {
   const [agradecimientosLista, setAgradecimientosLista] = React.useState({
     agradecimientos: [],
   });
   const [formDate, setFormDate] = React.useState({
-    date: "",
+    date: '',
   });
 
-
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Se esta manejando el submit')
-  }
+    console.log('Se esta manejando el submit');
+  };
 
   const handleDateChange = (e) => {
     setFormDate({
@@ -37,21 +36,23 @@ function AgradecimientosNew() {
   return (
     <React.Fragment>
       <div className="hero"></div>
-      <div className="agradecimiento-container">
-        <Agradecimiento
-          fecha={formDate.date}
-          lista={agradecimientosLista.agradecimientos}
-        />
-      </div>
-      <div className="form-container">
-        <h2>Nuevo día... Nuevas cosas que Agradecer</h2>
-        <AgradecimientosForm
-          envio={handleSubmit}
-          formDataValue={formDate}
-          formDateInput={handleDateChange}
-          formAgradecimientoValue={agradecimientosLista}
-          formAgradecimientoInput={handleAgradecimientoChange}
-        />
+      <div className="container-total">
+        <div className="agradecimiento-container">
+          <Agradecimiento
+            fecha={formDate.date}
+            lista={agradecimientosLista.agradecimientos}
+          />
+        </div>
+        <div className="form-container">
+          <h2>Nuevo día... Nuevas cosas que Agradecer</h2>
+          <AgradecimientosForm
+            envio={handleSubmit}
+            formDataValue={formDate}
+            formDateInput={handleDateChange}
+            formAgradecimientoValue={agradecimientosLista}
+            formAgradecimientoInput={handleAgradecimientoChange}
+          />
+        </div>
       </div>
     </React.Fragment>
   );
